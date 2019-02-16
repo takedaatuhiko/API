@@ -86,7 +86,7 @@ async function main() {
         drawMap(map, lct);
         const label = new Y.Label(new Y.LatLng(lct.lat, lct.lng), first.Name);
         map.addFeature(label);
-        const marker = new Y.Marker(new Y.LatLng(lct.lat,lct.lng));
+        var marker = new Y.Marker(new Y.LatLng(lct.lat,lct.lng));
 ymap.addFeature(marker);
       } else {
         resultText.textContent = '正しい住所を入力してください';
